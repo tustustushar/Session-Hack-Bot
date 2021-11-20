@@ -1,0 +1,40 @@
+{
+    "name": "Lynx BOT",
+    "description": "A bot CAN DO ANYTHING",
+    "logo": "",
+    "keywords": [
+        "TELETHON",
+        "Lynx Army",
+        "Telegram Bot",
+        "piro bolte",
+        "LynxBot_Chat"
+    ],
+    "website": "https://telegram.dog/lynxbot_chat",
+    "success_url": "https://telegram.dog/lynxbot_chat",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your API ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
